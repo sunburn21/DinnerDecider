@@ -1,2 +1,2 @@
 # DinnerDecider
-### select the dinner randomly
+### select your dinner randomly
