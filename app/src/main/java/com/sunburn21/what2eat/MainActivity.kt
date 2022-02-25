@@ -17,7 +17,11 @@ class MainActivity : AppCompatActivity() {
         }
         addfoodbtn.setOnClickListener{
             var foodtxt = addfoodtxt.text.toString()
-            foodList.add(foodtxt)
+            if (foodtxt != "") {
+                fooList.add(foodtxt)
+                addFoodTxt.hint = "Add new Food..."
+            }else
+                addFoodTxt.hint = "Plz Enter new Food"
             addfoodtxt.text.clear()
 
         }
